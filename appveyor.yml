@@ -1,16 +1,17 @@
-branches:
-  only:
-    - master
+-
+  image: Visual Studio 2017
+  branches:
+    only:
+      - master
+  environment:
+    NETLIFY_TOKEN:
+      secure: ebed113bac0e377e7f8eacef9c51d66d73e1d815a9d7ef8013b7d472ba2d108d
 
-environment:
-  NETLIFY_TOKEN:
-    secure: ebed113bac0e377e7f8eacef9c51d66d73e1d815a9d7ef8013b7d472ba2d108d
+  # Temporarily needed until curl added to PATH
+  # See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
+  # And https://github.com/appveyor/ci/issues/1431
+  install:
+  - set PATH=C:\Program Files\Git\mingw64\bin;%PATH%
 
-# Temporarily needed until curl added to PATH
-# See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
-# And https://github.com/appveyor/ci/issues/1431
-install:
-- set PATH=C:\Program Files\Git\mingw64\bin;%PATH%
-
-build_script:
-  - ps: .\build.ps1 -Target "AppVeyor"
+  build_script:
+    - ps: .\build.ps1 -Target "AppVeyor"
