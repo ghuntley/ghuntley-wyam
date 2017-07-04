@@ -4,7 +4,7 @@ branches:
 
 environment:
   NETLIFY_TOKEN:
-    secure: 0c96e45b397d407cf5096d4c074dbb9ad4b818b86bb8601da353fcea8deccacf
+    secure: ebed113bac0e377e7f8eacef9c51d66d73e1d815a9d7ef8013b7d472ba2d108d
 
 # Temporarily needed until curl added to PATH
 # See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
