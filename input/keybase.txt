@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/ghuntley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ghuntley.com
+  * I am ghuntley (https://keybase.io/ghuntley) on keybase.
+  * I have a public key ASC4ytGfgNLGCLLsUbLA36zY5eir3My_shGOYFdAf82U9Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b8cad19f80d2c608b2ec51b2c0dfacd8e5e8abdcccbfb2118e6057407fcd94f40a",
+            "host": "keybase.io",
+            "kid": "0120b8cad19f80d2c608b2ec51b2c0dfacd8e5e8abdcccbfb2118e6057407fcd94f40a",
+            "uid": "b789244640919e9c7911efae4c68b019",
+            "username": "ghuntley"
+        },
+        "merkle_root": {
+            "ctime": 1499039116,
+            "hash": "db14ebc6ec8fee7e1d6c8206cd38c5905198234a76065519c974b74aa99987bf59b771190fd50aa82c37030a68715260ea95a60732372ef7f4588f9e953c0a81",
+            "hash_meta": "bc1d3dae29c0ed08393cc9fcb7a66e6dd47b5a280ed657b9de43bbe49619a78a",
+            "seqno": 1206561
+        },
+        "service": {
+            "hostname": "ghuntley.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1499039176,
+    "expire_in": 504576000,
+    "prev": "0f67a907981fe8989b082c3fa0968825c972c600fad1b3de5fe8c8b25b59231a",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEguMrRn4DSxgiy7FGywN+s2OXoq9zMv7IRjmBXQH/NlPQKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjhjYWQxOWY4MGQyYzYwOGIyZWM1MWIyYzBkZmFjZDhlNWU4YWJkY2NjYmZiMjExOGU2MDU3NDA3ZmNkOTRmNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjhjYWQxOWY4MGQyYzYwOGIyZWM1MWIyYzBkZmFjZDhlNWU4YWJkY2NjYmZiMjExOGU2MDU3NDA3ZmNkOTRmNDBhIiwidWlkIjoiYjc4OTI0NDY0MDkxOWU5Yzc5MTFlZmFlNGM2OGIwMTkiLCJ1c2VybmFtZSI6ImdodW50bGV5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk5MDM5MTE2LCJoYXNoIjoiZGIxNGViYzZlYzhmZWU3ZTFkNmM4MjA2Y2QzOGM1OTA1MTk4MjM0YTc2MDY1NTE5Yzk3NGI3NGFhOTk5ODdiZjU5Yjc3MTE5MGZkNTBhYTgyYzM3MDMwYTY4NzE1MjYwZWE5NWE2MDczMjM3MmVmN2Y0NTg4ZjllOTUzYzBhODEiLCJoYXNoX21ldGEiOiJiYzFkM2RhZTI5YzBlZDA4MzkzY2M5ZmNiN2E2NmU2ZGQ0N2I1YTI4MGVkNjU3YjlkZTQzYmJlNDk2MTlhNzhhIiwic2Vxbm8iOjEyMDY1NjF9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZ2h1bnRsZXkuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yNCJ9LCJjdGltZSI6MTQ5OTAzOTE3NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIwZjY3YTkwNzk4MWZlODk4OWIwODJjM2ZhMDk2ODgyNWM5NzJjNjAwZmFkMWIzZGU1ZmU4YzhiMjViNTkyMzFhIiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RANQ2mViLbma+80ar62WsS9e1xAj06z/wKAn/c04e44KxB4pT5wVSlrbMv3yfPTjyaL5em4HpC2jmTN7Lc0Jf0C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKmXrbWNS4S8yIfCmpNEtIhkOeJedTYVmLd0E/d4v4UPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ghuntley
+
+==================================================================

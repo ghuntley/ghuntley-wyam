@@ -1,0 +1,10 @@
+Settings[Keys.Host] = "ghuntley.com";
+Settings[Keys.LinksUseHttps] = true;
+Settings[BlogKeys.PostsPath] = "blog";
+Settings[BlogKeys.ArchiveExcerpts] = false;
+Settings[BlogKeys.CaseInsensitiveTags] = true;
+Settings[BlogKeys.IncludeDateInPostPath] = false;
+Settings[BlogKeys.Title] = "Geoffrey Huntley";
+Settings[BlogKeys.Description] = "Hi, I'm Geoff";
+Settings[BlogKeys.Intro] = "Hi, my name is Geoffrey Huntley, a cross-platform mobile software engineer from Sydney, Australia. At the moment I'm working on a mix of product work and open source projects, but who knows what tomorrow will bring? I like both promite and vegemite.";
+Settings[BlogKeys.Image] = "images/books2.jpg";
