@@ -58,16 +58,22 @@ Task("Deploy")
             throw new Exception("Could not get NETLIFY_TOKEN environment variable");
         }
 
+        string site = EnvironmentVariable("NETLIFY_SITE");
+        if(string.IsNullOrEmpty(site))
+        {
+            throw new Exception("Could not get NETLIFY_SITE environment variable");
+        }
+
         // This uses the Netlify CLI, but it hits the 200/min API rate limit
         // To use this, also need #addin "Cake.Npm"
         // Npm.Install(x => x.Package("netlify-cli"));
         // StartProcess(
         //    MakeAbsolute(File("./node_modules/.bin/netlify.cmd")),
-        //    "deploy -p output -s daveaglick -t " + token);
+        //    "deploy -p output -s " + site + " -t " + token);
 
         // Upload via curl and zip instead
         Zip("./output", "output.zip", "./output/**/*");
-        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/daveaglick.netlify.com/deploys");
+        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/" + site + ".netlify.com/deploys");
     });
 
 //////////////////////////////////////////////////////////////////////
