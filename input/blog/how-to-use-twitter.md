@@ -12,7 +12,7 @@ Figuring out how to use Twitter was one of the best things I've ever done as a .
 * Your avatar is _very very very important_ have something distinctive and don't change it ever unless it's to get a professional mugshot taken.  Changing your avatar damages other peoples mental association of who you are and will set your progress back dramatically in the early years when people are getting to know you.
 * Ignore the twitter new user onboarding workflow. Don't follow super star personalities like Kayne West (even if you like Kayne) or the media as they will drown out the real opportunities on twitter.
 * Start with following [@dotnetoss](https://twitter.com/dotnetoss) and then follow anyone who is building stuff.
-* Over time you will learn things about people, you'll start to be able to stereotype what someones interests in software development roughly. This knowledge is critical. You put the same amount of effort into this as you would get to know a co-worker you want to get to know.
+* Over time you will learn things about people, you'll start to be able to stereotype what someones interests in software development is and the domain (security, distributed, mobile, backend, frontend) they operate in. This knowledge is critical. You put the same amount of effort into this as you would get to know a co-worker you want to get to know.
 * Anytime they are sharing something on twitter that is an opportunity to help them out with the problem they have or to create content that makes that person looks good. Two examples:
 
 1. #trainops - I saw some person on a train using Octopus Deploy and deliberately tweeted it out as they could use it as part of their marketing content.
