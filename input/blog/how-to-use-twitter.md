@@ -22,14 +22,16 @@ Figuring out how to use Twitter was one of the best things I've ever done as a .
 
 2. My daughter was playing baby smash by Scott Hanselman, and I snapped a photo to show a coworker how Twitter works and commented that Scott will probably retweet it, which he did. Thanks Scott. David Burella of Microsoft saw some of my remarks regarding that it would be neat to have it in the windows store and setup a live-coding session with Scott to convert the app and make it reality. Double win!
 
+a. 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Miss 8months plays her first ever computer game.... Mr <a href="https://twitter.com/shanselman">@shanselman</a>&#39;s <a href="https://t.co/gzjvjer91u">https://t.co/gzjvjer91u</a>. <a href="https://t.co/aZLOAxrz80">pic.twitter.com/aZLOAxrz80</a></p>&mdash; Geoffrey Huntley (@GeoffreyHuntley) <a href="https://twitter.com/GeoffreyHuntley/status/884218389161418752">July 10, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
+b. 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">let&#39;s do it</p>&mdash; Scott Hanselman (@shanselman) <a href="https://twitter.com/shanselman/status/884611601294176257">July 11, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[![](http://img.youtube.com/vi/W_pE4wIMuFw/0.jpg)](http://www.youtube.com/watch?v=W_pE4wIMuFw "")
+c. 
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/W_pE4wIMuFw" frameborder="0" allowfullscreen></iframe>
 
 Once you have above mastered, something cool happens. 
 
