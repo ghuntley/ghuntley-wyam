@@ -13,7 +13,7 @@ Figuring out how to use Twitter was one of the best things I've ever done as a .
 * Ignore the twitter new user onboarding workflow. Don't follow super star personalities like Kayne West (unless you like Kayne) or the media as they will drown out the real opportunities on twitter.
 * Start with following [@dotnetoss](https://twitter.com/dotnetoss) and then follow anyone who is building stuff.
 * Over time you will learn things about people, you'll start to be able to stereotype what someones interests in software development roughly. This knowledge is critical. You put the same amount of effort into this as you would get to know a co-worker you want to get to know.
-* Anytime they are sharing something on twitter that is an opportunity to help them out with the problem they have or create content that makes that person looks good. Two examples:
+* Anytime they are sharing something on twitter that is an opportunity to help them out with the problem they have or to create content that makes that person looks good. Two examples:
 
 1. #trainops - I saw some person on a train using Octopus Deploy and deliberately tweeted it out as they could use it as part of their marketing content.
 
