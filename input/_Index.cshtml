@@ -1,0 +1,26 @@
+@foreach(IDocument post in Model.DocumentList(Keys.PageDocuments))
+{
+  <div class="article container">
+    <article class="article_content wrap" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <header class="post_head post">
+            <h2 class="post_title"><a href="@Context.GetLink(post)">@post.WithoutSettings.String(BlogKeys.Title)</a>
+            </h2>
+            <time datetime="@(post.Get<DateTime>(BlogKeys.Published).ToLongDateString(Context))"> @(post.Get<DateTime>(BlogKeys.Published).ToLongDateString(Context))</time>
+        </header>
+
+        <section class="article_text post">
+            <p itemprop="description">@Html.Raw(post.String(BlogKeys.Excerpt)) <a class="article_link-more fa fa-long-arrow-right" href="@Context.GetLink(post)"></a></p>
+        </section>
+
+        <footer class="post_tag">
+        @foreach(string tag in post.Get<string[]>(BlogKeys.Tags))
+        {
+          if (tag != null)
+          {
+            <a class="tag" href="/tags/@Context.GetLink(tag)">@tag</a>
+          }
+        }
+        </footer>
+    </article>
+  </div>
+}

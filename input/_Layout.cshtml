@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <title>@Model.WithoutSettings.String(BlogKeys.Title)</title>
+    <meta content="" name="description">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"> -->
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="http://localhost:5080/assets/css/main.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic" rel="stylesheet">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta content="@Context.String(BlogKeys.Intro)" name="description">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://www.ghuntley.com/" rel="canonical">
+    <meta content="no-referrer-when-downgrade" name="referrer">
+
+    @if(Model.Bool(Keys.PreviousPage)) {
+        <link href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))" rel="prev">
+    }
+
+    @if(Model.Bool(Keys.HasNextPage)) {
+        <link href="@(Context.GetLink(Model.Document(Keys.NextPage)))" rel="next">
+    }
+
+    <meta content="Geoffrey Huntley" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="Geoffrey Huntley" property="og:title">
+    <meta content="@Context.String(BlogKeys.Intro)" property="og:description">
+    <meta content="https://www.ghuntley.com/" property="og:url">
+    <meta content="https://www.ghuntley.com/content/images/2017/01/1.jpg" property="og:image">
+    <meta content="https://www.facebook.com/geoffreyhuntley" property="article:publisher">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Geoffrey Huntley" name="twitter:title">
+    <meta content="@Context.String(BlogKeys.Intro)" name="twitter:description">
+    <meta content="https://www.ghuntley.com/" name="twitter:url">
+    <meta content="https://www.ghuntley.com/content/images/2017/01/1.jpg" name="twitter:image">
+    <meta content="@@geoffreyhuntley" name="twitter:site">
+    <meta content="1200" property="og:image:width">
+    <meta content="640" property="og:image:height">
+    <script type="application/ld+json">
+        {
+        "@@context": "https://schema.org",
+        "@@type": "Website",
+        "publisher": {
+            "@@type": "Organization",
+            "name": "Geoffrey Huntley",
+            "logo": {
+                "@@type": "ImageObject",
+                "url": "https://www.ghuntley.com/content/images/2016/04/Troy-Hunt-Profile-Photo.jpg",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "url": "https://www.ghuntley.com/",
+        "image": {
+            "@@type": "ImageObject",
+            "url": "https://www.ghuntley.com/content/images/2017/01/1.jpg",
+            "width": 1200,
+            "height": 640
+        },
+        "mainEntityOfPage": {
+            "@@type": "WebPage",
+            "@@id": "https://www.ghuntley.com/"
+        },
+        "description": "@Context.String(BlogKeys.Intro)"
+        }
+    </script>
+
+    <link href="https://www.ghuntley.com/rss/" rel="alternate" title="Geoffrey Huntley" type="application/rss+xml">
+</head>
+<body class="home-template">
+    <div id="container">
+        <div class="header_block container">
+            <div class="header">
+                <button class="header_navMenu_button i-menu" id="open-button"></button>
+
+                <div class="header_navMenu_wrap">
+                  @Html.Partial("_Navigation")
+                </div>
+
+
+                <div class="header_socialIcons light">
+                    @Html.Partial("_SocialLinks")
+                </div>
+            </div>
+        </div>
+
+        @{
+            string backgroundImage = null;
+            if(Model.String(BlogKeys.Image) != null)
+            {
+              backgroundImage = $"background-image: url(\"{Model.String(BlogKeys.Image)}\")";
+            }
+        }
+
+        <div class="article_feature_first-img container" style="@backgroundImage">
+            <div class="hover">
+            </div>
+
+            @{
+                string title = "Geoffrey Huntley";
+                if(!String.IsNullOrWhiteSpace(Model.WithoutSettings.String(BlogKeys.Title)))
+                {
+                  title = Model.WithoutSettings.String(BlogKeys.Title);
+                }
+            }
+            <article class="article_item_first wrap hover container">
+                <header class="post_head">
+                    <h1>@title</h1>
+                </header>
+
+                <section>
+                    <p class="blog_description post_text" itemprop="description">@Context.String(BlogKeys.Intro) <a class="article_link-more fa fa-long-arrow-right" href="/about"></a></p>
+                </section>
+            </article>
+        </div>
+
+      <div class="main-wrapper">
+        @RenderBody()
+
+        <div class="content-sidebar">
+            @Html.Partial("_Sidebar")
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="pagination container" role="navigation">
+      <div class="pagination_content wrap">
+
+        @if(Model.Bool(Keys.HasNextPage)) {
+          <a class="pagination_next fa fa-long-arrow-right" href="@(Context.GetLink(Model.Document(Keys.NextPage)))"></a>
+          <a class="pagination_next" href="@(Context.GetLink(Model.Document(Keys.NextPage)))">Older posts</a>
+        }
+
+        @if(Model.Bool(Keys.PreviousPage)) {
+          <a class="pagination_prev fa fa-long-arrow-right" href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))"></a>
+          <a class="pagination_prev" href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))">Older posts</a>
+        }
+        <ul class="pagination_pages">
+                <div class="footer_socialIcons">
+                    @Html.Partial("_SocialLinks")
+                </div>
+        </ul>
+
+      </div>
+    </nav>
+
+    <footer id="footer">
+        <div class="footer_block" id="floating_subscribe">
+            <div class="footer">
+                <a class="close_floating_subscribe" href="#subscribe">Subscribe <i aria-hidden="true" class="fa fa-envelope-o"></i></a>
+
+                <div class="subscribe_close">
+                    <a class="close_floating_subscribe" href="#" onclick="return false;"><i aria-hidden="true" class="fa fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

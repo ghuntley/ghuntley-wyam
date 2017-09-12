@@ -17,7 +17,7 @@ Task("Build")
         Wyam(new WyamSettings
         {
             Recipe = "Blog",
-            Theme = "CleanBlog",
+            Theme = "BlogTemplate",
             UpdatePackages = true
         });
     });
@@ -28,7 +28,7 @@ Task("Preview")
         Wyam(new WyamSettings
         {
             Recipe = "Blog",
-            Theme = "CleanBlog",
+            Theme = "BlogTemplate",
             UpdatePackages = false,
             Preview = true,
             Watch = true
@@ -39,14 +39,14 @@ Task("Debug")
     .Does(() =>
     {
         StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
-            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/CleanBlog\" -p -w");
+            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/BlogTemplate\" -p -w");
     });
 
 Task("Mono")
     .Does(() =>
     {
         StartProcess(@"c:\Program Files\Mono\bin\mono.exe", "../Wyam/src/clients/Wyam/bin/Debug/wyam.exe " +
-            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/CleanBlog\" -p --verbose");
+            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/BlogTemplate\" -p --verbose");
     });
 
 Task("Deploy")

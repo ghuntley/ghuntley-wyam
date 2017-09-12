@@ -5,6 +5,14 @@ Settings[BlogKeys.ArchiveExcerpts] = false;
 Settings[BlogKeys.CaseInsensitiveTags] = true;
 Settings[BlogKeys.IncludeDateInPostPath] = false;
 Settings[BlogKeys.Title] = "Geoffrey Huntley";
-Settings[BlogKeys.Description] = "Hi, I'm Geoff";
-Settings[BlogKeys.Intro] = "Hi, my name is Geoffrey Huntley, a cross-platform mobile software engineer from Sydney, Australia. At the moment I'm working on a mix of product work and open source projects, but who knows what tomorrow will bring? I like both promite and vegemite.";
-Settings[BlogKeys.Image] = "images/books2.jpg";
+Settings[BlogKeys.Description] = "Geoffrey Huntley";
+Settings[BlogKeys.Intro] = "Hi, I'm Geoffrey Huntley, a Microsoft and Xamarin MVP, curator of the Weekly Xamarin newsletter and a core maintainer of the open-source project ReactiveUI which is used in products shipped by GitHub, Slack, Amazon, Elastic Inc and more.";
+Settings[BlogKeys.Image] = "http://localhost:5080/assets/PVickery_GeoffreyHuntley-1.jpg";
+
+
+Settings[BlogKeys.MetaRefreshRedirects] = true;
+Settings[BlogKeys.NetlifyRedirects] = true;
+
+Settings[BlogKeys.ValidateLinksAsError] = true;
+Settings[BlogKeys.ValidateRelativeLinks] = true;
+Settings[BlogKeys.ValidateAbsoluteLinks] = false;
